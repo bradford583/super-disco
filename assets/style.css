@@ -52,10 +52,11 @@ textarea{
 }
 
 .row {
+  display: flex;
   white-space: pre-wrap;
   height: 80px;
   border-top: 1px solid white;
-  border-radius: 25px;
+  border-radius: 15px;
 }
 
 .hour {
@@ -79,6 +80,13 @@ textarea{
   color: white;
 }
 
+.dailyPlan {
+  color: black;  
+  font-size: 12pt;
+  height:100%;
+  width: 100%;
+}
+
 .saveBtn {
   border-left: 1px solid black;
   border-top-right-radius: 15px;
@@ -87,7 +95,21 @@ textarea{
   color: white;
 }
 
-.saveBtn i:hover {
-  font-size: 20px;
-  transition: all .3s ease-in-out;
+.saveIcon {
+  text-align: center;
+  
+}
+
+
+@keyframes shadow-pulse
+{
+  0% {
+    box-shadow: 0 0 0 0px rgba(0, 0, 0, 0.2);
+  }
+  100% {
+    box-shadow: 0 0 0 35px rgba(0, 0, 0, 0);
+  }
+}
+.shadowPulse {
+  animation: shadow-pulse 1s infinite;
 }
