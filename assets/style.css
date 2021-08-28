@@ -20,9 +20,10 @@ input {
 #header-subtitle {
   padding: 2px;
   font-size: 15px;
-  color: linen!important; /* TODO can we do this without the !important */
+  color: black;
   text-align: center;
 }
+
 
 textarea{
   background: transparent;
@@ -53,7 +54,8 @@ textarea{
 .row {
   white-space: pre-wrap;
   height: 80px;
-  border-top: 1px solid white;;
+  border-top: 1px solid white;
+  border-radius: 25px;
 }
 
 .hour {
